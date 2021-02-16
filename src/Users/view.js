@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import { Link } from 'react-router-dom';
 class View extends Component {
     constructor (props) {
         super(props);

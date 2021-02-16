@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import { Link } from 'react-router-dom';
 class Edit extends Component {
     constructor (props) {
         super(props);
@@ -36,7 +35,7 @@ class Edit extends Component {
                 </div>
                 <div className="">                  
                     <div><h3><b>Title</b>: {item.title}</h3></div>
-                    <div><h7><b>Body</b>: {item.body}</h7></div>
+                    <div><p><b>Body</b>: {item.body}</p></div>
                 </div>
             </div>
         );
