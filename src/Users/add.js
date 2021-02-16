@@ -1,6 +1,4 @@
 import {Component} from 'react';
-import { Link } from 'react-router-dom';
-
 class Add extends Component {
     
     render () {
@@ -8,7 +6,6 @@ class Add extends Component {
             <div className="textAlignCenter">
                 <div className="heading">
                     <span>Add user</span>
-                    <Link to="/users" className="link">Users</Link>
                 </div>
             </div>
         )
