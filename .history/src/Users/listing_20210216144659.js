@@ -51,7 +51,7 @@ class Listing extends Component {
                                     <tr className="Row" key={item.id}>
                                         <td>{item.id}</td>
                                         <td>{item.title}</td>
-                                        <td><Link to={'/users/view/' + item.id} className="link">View</Link></td>
+                                        <td></td>
                                     </tr>
                                 ))
                             }

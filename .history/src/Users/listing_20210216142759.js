@@ -36,28 +36,6 @@ class Listing extends Component {
                     <span>Listing</span>
                     <Link to="/users/add" className="link">Add User</Link>
                 </div>
-                <div className="table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Title</th>
-                                <th>Action</th>
-                            </tr>    
-                        </thead>  
-                        <tbody>
-                            {
-                                items.map(item => (
-                                    <tr className="Row" key={item.id}>
-                                        <td>{item.id}</td>
-                                        <td>{item.title}</td>
-                                        <td><Link to={'/users/view/' + item.id} className="link">View</Link></td>
-                                    </tr>
-                                ))
-                            }
-                        </tbody>        
-                    </table>
-                </div>
             </div>
         );
     }

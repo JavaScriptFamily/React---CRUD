@@ -21,8 +21,8 @@ ReactDOM.render(
       <Switch>
         <Route path="/users" exact component={Listing} />
         <Route path="/users/add" component={Add} />
-        <Route path="/users/edit:id" component={Edit} />
-        <Route path="/users/view:id" component={View} />
+        <Route path="/users/edit" component={Edit} />
+        <Route path="/users/view" component={View} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

@@ -1,0 +1,20 @@
+.menu {
+    text-align: center;
+    padding: 10px;
+}
+
+.menu a {
+    margin-left: 20px;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.heading {
+    padding: 50px;
+}
+
+.link {
+    margin-left:150px;
+}

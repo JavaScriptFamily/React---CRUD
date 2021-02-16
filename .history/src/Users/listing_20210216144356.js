@@ -44,18 +44,16 @@ class Listing extends Component {
                                 <th>Title</th>
                                 <th>Action</th>
                             </tr>    
-                        </thead>  
-                        <tbody>
-                            {
-                                items.map(item => (
-                                    <tr className="Row" key={item.id}>
-                                        <td>{item.id}</td>
-                                        <td>{item.title}</td>
-                                        <td><Link to={'/users/view/' + item.id} className="link">View</Link></td>
-                                    </tr>
-                                ))
-                            }
-                        </tbody>        
+                        </thead>            
+                        {
+                            items.map(item => (
+                                <tr className="Row" key={item.id}>
+                                    <td>{item.id}</td>
+                                    <td>{item.title}</td>
+                                    <td></td>
+                                </tr>
+                            ))
+                        }
                     </table>
                 </div>
             </div>
