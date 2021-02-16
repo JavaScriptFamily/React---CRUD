@@ -15,14 +15,14 @@ ReactDOM.render(
     <BrowserRouter>
       <div className="menu">
         <Link to="/"> Home</Link>
-        <Link to="/posts">Posts</Link>
+        <Link to="/users">Posts</Link>
       </div>
       
       <Switch>
-        <Route path="/posts" exact component={Listing} />
-        <Route path="/posts/add" component={Add} />
-        <Route path="/posts/edit/:id" component={Edit} />
-        <Route path="/posts/view/:id" component={View} />
+        <Route path="/users" exact component={Listing} />
+        <Route path="/users/add" component={Add} />
+        <Route path="/users/edit/:id" component={Edit} />
+        <Route path="/users/view/:id" component={View} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

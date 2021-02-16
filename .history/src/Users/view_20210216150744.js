@@ -31,12 +31,13 @@ class View extends Component {
 
         return (
             <div>
-                <div className="textAlignCenter marginTopBottom50">
+                <div className="heading">
                     <span>View Post</span>
+                    <Link to="/users" className="link">Post</Link>
                 </div>
                 <div className="">                  
                     <div><h3><b>Title</b>: {item.title}</h3></div>
-                    <div><h7><b>Body</b>: {item.body}</h7></div>
+                    <div><h3><b>Body</b>: {item.body}</h3></div>
                 </div>
             </div>
         );

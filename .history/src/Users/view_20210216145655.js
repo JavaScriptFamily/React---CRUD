@@ -1,28 +1,28 @@
 import { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Listing extends Component {
+class View extends Component {
     constructor (props) {
         super(props);
         this.state = {
             isLoading: true,
-            items: []
+            item: []
         }
     }
 
     componentDidMount () {
-        fetch("https://jsonplaceholder.typicode.com/posts")
+        fetch("https://jsonplaceholder.typicode.com/posts/1")
             .then(res => res.json())
             .then(json => {
                 this.setState ({
                     isLoading: false,
-                    items: json
+                    item: json
                 });
             });
     }
 
     render () {
-        let { isLoading, items } = this.state;
+        let { isLoading, item } = this.state;
 
         if (isLoading) {
             return (
@@ -33,8 +33,8 @@ class Listing extends Component {
         return (
             <div className="App textAlignCenter">
                 <div className="heading">
-                    <span>Listing</span>
-                    <Link to="/posts/add" className="link">Add</Link>
+                    <span>View Post</span>
+                    <Link to="/users" className="link">Post</Link>
                 </div>
                 <div className="table">
                     <table>
@@ -47,20 +47,19 @@ class Listing extends Component {
                         </thead>  
                         <tbody>
                             {
-                                items.map(item => (
-                                    <tr className="Row" key={item.id}>
-                                        <td>{item.id}</td>
-                                        <td>{item.title}</td>
-                                        <td><Link to={'/posts/view/' + item.id} className="link">View</Link></td>
-                                    </tr>
-                                ))
+                                <tr className="Row" key={item.id}>
+                                    <td>{item.id}</td>
+                                    <td>{item.title}</td>
+                                    <td><Link to={'/users/view/' + item.id} className="link">View</Link></td>
+                                </tr>
                             }
                         </tbody>        
                     </table>
                 </div>
             </div>
         );
-    }        
+    }
+        
 }
 
 export default Listing;

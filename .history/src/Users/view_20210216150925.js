@@ -31,7 +31,7 @@ class View extends Component {
 
         return (
             <div>
-                <div className="textAlignCenter marginTopBottom50">
+                <div className="textAlignCenter marginTop100">
                     <span>View Post</span>
                 </div>
                 <div className="">                  

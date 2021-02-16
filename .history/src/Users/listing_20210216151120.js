@@ -60,7 +60,8 @@ class Listing extends Component {
                 </div>
             </div>
         );
-    }        
+    }
+        
 }
 
 export default Listing;
