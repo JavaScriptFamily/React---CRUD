@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
-// User Module
-import Listing from './Users/listing';
-import Add from './Users/add';
-import Edit from './Users/edit';
-import View from './Users/view';
+// Posts Module
+import Listing from './Posts/listing';
+import Add from './Posts/add';
+import Edit from './Posts/edit';
+import View from './Posts/view';
 
 import './style.css';
 
