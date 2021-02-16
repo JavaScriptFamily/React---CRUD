@@ -27,5 +27,5 @@ tr:nth-child(even) {
 
 form { width:500px;}
 form input { min-width: 600px; }
-form div { padding: 10px; }
+form div { padding: 100px; }
 form textarea { min-width: 600px; }

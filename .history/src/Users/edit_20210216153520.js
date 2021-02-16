@@ -30,14 +30,19 @@ class Edit extends Component {
         }
 
         return (
-            <div>
-                <div className="textAlignCenter marginTopBottom50">
+            <div className="textAlignCenter">
+                <div className="marginTopBottom50">
                     <span>Edit Post</span>
                 </div>
-                <div className="">                  
-                    <div><h3><b>Title</b>: {item.title}</h3></div>
-                    <div><h7><b>Body</b>: {item.body}</h7></div>
-                </div>
+                <form onSubmit={this.onSubmit}>
+                    <div>
+                        <input type="text" value={item.title} />
+                    </div>
+                    <div>
+                        <textarea>{item.body}</textarea>
+                    </div>
+                    <input type="submit" value="Submit" />
+                </form>                
             </div>
         );
     }        

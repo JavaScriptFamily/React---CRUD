@@ -25,7 +25,4 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-form { width:500px;}
-form input { min-width: 600px; }
-form div { padding: 10px; }
-form textarea { min-width: 600px; }
+form { text-align: center; width:500px;}
