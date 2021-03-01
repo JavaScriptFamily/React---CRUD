@@ -74,10 +74,11 @@ form textarea { min-width: 600px; height: 200px; }
 }
 
 .pagination {
-    margin: 15px auto;
+    margin: 40px auto;
     display: flex;
     list-style: none;
     outline: none;
+    float: right;
   }
   .pagination > .active > a{
     background-color: #47ccde ;

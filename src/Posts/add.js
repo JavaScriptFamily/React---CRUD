@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import axios from 'axios';
+import  { Redirect } from 'react-router-dom'
 
 class Add extends Component {
     state = {
@@ -17,6 +18,7 @@ class Add extends Component {
         axios.post('/posts', data)
             .then(response => {
                 console.log(response);
+                return <Redirect to='/posts'  />
             });
     }
 
